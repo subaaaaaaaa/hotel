@@ -17,7 +17,7 @@
     </ul>
 </div>
 @endif
-<form action="/guest/guest_info" method="post">
+<form action="/guest/info" method="post">
     <table>
         @csrf
         <tr>

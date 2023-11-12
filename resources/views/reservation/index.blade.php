@@ -10,13 +10,14 @@
 @section('content')
     <table>
         <tr>
-            <th>代表者名</th>
-            <th>ご住所</th>
-            <th>電話番号</th>
+            <th>チェックイン日</th>
+            <th>チェックアウト日</th>
+            <th>大人</th>
+            <th>子ども</th>
         </tr>
         @foreach ($items as $item)
             <tr>
-                <td>{{ $item->guest_name }}</td>
+                <td>{{ $item-> }}</td>
                 <td>{{ $item->address }}</td>
                 <td>{{ $item->tel }}</td>
             </tr>

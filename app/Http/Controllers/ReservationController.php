@@ -10,7 +10,7 @@ class ReservationController extends Controller
     public function index(Request $request)
     {
         $items = Reservation::all();
-        return view('guest.index',['items' => $items]);
+        return view('reservation.index',['items' => $items]);
     }
 
     public function add(Request $request)
@@ -25,6 +25,6 @@ class ReservationController extends Controller
         $form = $request->all();
         unset($form['_token']);
         $reservation->fill($form)->save();
-        return redirect('/guest/reservation');
+        return redirect('/guest/reserve');
     }
 }

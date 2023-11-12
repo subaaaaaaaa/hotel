@@ -17,7 +17,7 @@
     </ul>
 </div>
 @endif
-<form action="/guest/guest_reserve" method="post">
+<form action="/guest/reserve" method="post">
     <table>
         @csrf
         <tr>
@@ -38,7 +38,7 @@
         </tr>
         <tr>
             <th></th>
-            <td><input type="submit" value="送信"></td>
+            <td><input type="submit" value="検索"></td>
         </tr>
     </table>
 </form>

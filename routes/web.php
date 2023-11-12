@@ -19,8 +19,8 @@ Route::get('/', function () {
 
 Route::get('guest', 'GuestController@index');
 
-Route::get('guest/guest_info', 'GuestController@add');
-Route::post('guest/guest_info', 'GuestController@create');
+Route::get('guest/info', 'GuestController@add');
+Route::post('guest/info', 'GuestController@create');
 
-Route::get('guest/guest_reserve', 'ReservationController@add');
-Route::post('guest/guest_reserve', 'ReservationController@create');
+Route::get('guest/reserve', 'ReservationController@add');
+Route::post('guest/reserve', 'ReservationController@create');
