@@ -14,11 +14,11 @@
             <th>ご住所</th>
             <th>電話番号</th>
         </tr>
-        @foreach ($items as $item)
+        @foreach ($guests as $guest)
             <tr>
-                <td>{{ $item->guest_name }}</td>
-                <td>{{ $item->address }}</td>
-                <td>{{ $item->tel }}</td>
+                <td>{{ $guest->guest_name }}</td>
+                <td>{{ $guest->address }}</td>
+                <td>{{ $guest->tel }}</td>
             </tr>
         @endforeach
     </table>

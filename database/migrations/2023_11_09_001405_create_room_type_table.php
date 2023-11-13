@@ -17,6 +17,7 @@ class CreateRoomTypeTable extends Migration
             $table->integer('room_type_id');
             $table->string('room_name');
             $table->integer('capacity');
+            $table->timestamps();
         });
     }
 

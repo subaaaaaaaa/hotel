@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 
 class GuestController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
-        $items = Guest::all();
-        return view('guest.index',['items' => $items]);
+        $guests = Guest::all();
+        return view('guest.index',['guests' => $guests]);
     }
 
     public function add(Request $request)
@@ -27,4 +27,6 @@ class GuestController extends Controller
         $guest->fill($form)->save();
         return redirect('/guest/reserve');
     }
+
+    
 }

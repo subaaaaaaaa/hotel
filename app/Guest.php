@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Guest extends Model
 {
-    protected $guarded = array('id');
+    protected $guarded = array('guest_id');
 
     public static $rules = array(
         'guest_name' => 'required',
@@ -14,8 +14,29 @@ class Guest extends Model
         'tel' => 'required'
     );
 
-    public function getData()
+    // public function getId()
+    // {
+    //     return $this->guest_id;
+    // }
+
+    // public function getName()
+    // {
+    //     return $this->guest_name;
+    //     // return $this->guest_name;$this->address; $this->tel;
+    // }
+
+    // public function getAddress()
+    // {
+    //     return $this->address;
+    // }
+
+    // public function getTel()
+    // {
+    //     return $this->tel;
+    // }
+
+    public function hotel()
     {
-        // anycode
+        return $this->hasOne('App\Hotel');
     }
 }

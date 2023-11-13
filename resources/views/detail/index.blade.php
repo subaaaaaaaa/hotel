@@ -1,6 +1,6 @@
 @extends('layouts.hotelapp')
 
-@section('title', 'reservation.index')
+@section('title', 'Guest.index')
 
 @section('menubar')
     @parent
@@ -10,14 +10,12 @@
 @section('content')
     <table>
         <tr>
-            <th>お客様ID</th>
+            <th>id</th>
         </tr>
         @foreach ($items as $item)
-        <td>
-            @if ($item->hotel != null)
-                {{ $item->hotel->getId() }}
-            @endif
-        </td>
+            <tr>
+                <td>{{ $item->getId() }}</td>
+            </tr>
         @endforeach
     </table>
 @endsection

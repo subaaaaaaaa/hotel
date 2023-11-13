@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateReservationDetailsTable extends Migration
+class CreateReservationsDetailsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -30,6 +30,6 @@ class CreateReservationDetailsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('reservation_details');
+        Schema::dropIfExists('reservations_details');
     }
 }
