@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call(GuestsTableSeeder::class);
-        $this->call(Room_typeTableSeeder::class);
+        // $this->call(Room_typeTableSeeder::class);
+        $this->call(Room_typesTableSeeder::class);
     }
 }
